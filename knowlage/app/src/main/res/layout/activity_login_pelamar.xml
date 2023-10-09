@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".login_pelamar">
+
+    <TextView
+            android:text="Masuk ke Akun Anda"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:layout_width="wrap_content"
+            android:textSize="24dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            tools:layout_editor_absoluteY="118dp"
+            tools:layout_editor_absoluteX="142dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:textColor="#020202"/>
+
+    <TextView android:layout_width="wrap_content"
+              android:text="Email"
+              android:layout_marginTop="80dp"
+              android:layout_marginStart="50dp"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/textView2"
+              android:id="@+id/tve"
+    />
+
+    <EditText
+            android:layout_width="327dp"
+            android:layout_height="44dp"
+            android:paddingStart="10dp"
+            android:background="@drawable/edittext"
+            android:inputType="text"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tve"
+            android:hint="Isi Teks....."
+            android:ems="10"
+            android:id="@+id/editTextText"
+            tools:layout_editor_absoluteY="261dp"
+            tools:layout_editor_absoluteX="82dp"/>
+
+    <TextView android:layout_width="wrap_content"
+              android:text="Sandi"
+              android:layout_marginTop="20dp"
+              android:layout_marginStart="50dp"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/editTextText"
+              android:id="@+id/tvpw"
+    />
+    <EditText
+            android:layout_width="327dp"
+            android:layout_height="44dp"
+            android:paddingStart="10dp"
+            android:background="@drawable/edittext"
+            android:layout_centerHorizontal="true"
+            android:inputType="textPassword"
+            android:layout_below="@+id/tvpw"
+            android:hint="Isi Teks....."
+            android:ems="10"
+            android:id="@+id/editTextTextPassword" tools:layout_editor_absoluteY="376dp"
+            tools:layout_editor_absoluteX="82dp"/>
+    <androidx.appcompat.widget.AppCompatButton
+            android:text="Masuk"
+            android:layout_below="@+id/editTextTextPassword"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_width="327dp"
+            android:layout_height="48dp"
+            android:background="@drawable/buttonblue"
+            android:id="@+id/buttonlogin"
+            tools:layout_editor_absoluteY="495dp"
+            tools:layout_editor_absoluteX="171dp" android:textColor="#FFFFFF"/>
+    <TextView
+            android:text="Masuk Dengan"
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buttonlogin"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/montserrat_medium"
+            android:id="@+id/textView3"
+            tools:layout_editor_absoluteY="608dp"
+            tools:layout_editor_absoluteX="200dp"/>
+
+    <TextView
+            android:text="Tidak Punya Akun ?"
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:layout_below="@+id/textView3"
+            android:layout_marginStart="110dp"
+            android:id="@+id/textView4"
+            tools:layout_editor_absoluteY="635dp"
+            tools:layout_editor_absoluteX="103dp"/>
+    <TextView
+            android:text="Daftar"
+            android:textSize="14dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="5dp"
+            android:layout_below="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_toEndOf="@+id/textView4"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView5"
+            tools:layout_editor_absoluteY="659dp"
+            tools:layout_editor_absoluteX="211dp" android:textColor="#E61F1F"/>
+
+</RelativeLayout>
