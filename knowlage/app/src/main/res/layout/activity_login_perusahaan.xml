@@ -5,7 +5,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".login_pelamar"
+        tools:context=".login_perusahaan"
         android:id="@+id/relativeLayout2">
 
     <TextView
@@ -24,14 +24,13 @@
             app:layout_constraintRight_toRightOf="parent"/>
 
     <TextView android:layout_width="wrap_content"
-              android:text="Email"
+              android:text="Email Perusahaan"
               android:fontFamily="@font/montserrat_medium"
               android:layout_marginTop="80dp"
               android:layout_marginStart="40dp"
               android:layout_height="wrap_content"
               android:id="@+id/tve"
-              app:layout_constraintStart_toStartOf="parent"
-              app:layout_constraintTop_toBottomOf="@+id/textView2"/>
+              app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/textView2"/>
 
     <EditText
             android:layout_width="327dp"
@@ -42,7 +41,7 @@
             android:inputType="text"
             android:hint="Isi Teks....."
             android:ems="10"
-            android:id="@+id/editTextText"
+            android:id="@+id/editTextText_perusahaan"
             tools:layout_editor_absoluteY="261dp"
             tools:layout_editor_absoluteX="82dp"
             app:layout_constraintTop_toBottomOf="@+id/tve"
@@ -57,7 +56,7 @@
               android:layout_height="wrap_content"
               android:id="@+id/tvpw"
               app:layout_constraintStart_toStartOf="parent"
-              app:layout_constraintTop_toBottomOf="@+id/editTextText"/>
+              app:layout_constraintTop_toBottomOf="@+id/editTextText_perusahaan"/>
     <EditText
             android:layout_width="327dp"
             android:layout_height="44dp"
@@ -67,7 +66,7 @@
             android:inputType="textPassword"
             android:hint="Isi Teks....."
             android:ems="10"
-            android:id="@+id/editTextTextPassword"
+            android:id="@+id/editTextTextPassword_perusahaan"
             tools:layout_editor_absoluteY="376dp"
             tools:layout_editor_absoluteX="82dp"
             app:layout_constraintTop_toBottomOf="@+id/tvpw"
@@ -79,11 +78,12 @@
             android:layout_width="327dp"
             android:layout_height="48dp"
             android:background="@drawable/buttonblue"
-            android:id="@+id/buttonlogin"
+            android:id="@+id/buttonlogin_perusahaan"
             tools:layout_editor_absoluteY="495dp"
             tools:layout_editor_absoluteX="171dp"
             android:textColor="#FFFFFF"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword_perusahaan"
+            app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"/>
     <TextView
             android:text="Masuk Dengan"
@@ -95,7 +95,7 @@
             android:id="@+id/textView3"
             tools:layout_editor_absoluteY="608dp"
             tools:layout_editor_absoluteX="200dp"
-            app:layout_constraintTop_toBottomOf="@+id/buttonlogin"
+            app:layout_constraintTop_toBottomOf="@+id/buttonlogin_perusahaan"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"/>
 
@@ -109,7 +109,7 @@
             android:layout_marginStart="112dp"
             android:id="@+id/textView4"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageButtonFB"
+            app:layout_constraintTop_toBottomOf="@+id/imageButtonFB_perusahaan"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintVertical_bias="0.0"/>
     <TextView
@@ -120,9 +120,9 @@
             android:layout_marginStart="4dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/to_sign"
+            android:id="@+id/sign_perusahaan"
             android:textColor="#E61F1F"
-            app:layout_constraintTop_toBottomOf="@+id/imageButtonFB"
+            app:layout_constraintTop_toBottomOf="@+id/imageButtonFB_perusahaan"
             app:layout_constraintStart_toEndOf="@+id/textView4"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintVertical_bias="0.0"/>
@@ -133,9 +133,9 @@
             android:scaleType="fitCenter"
             android:layout_marginStart="20dp"
             app:srcCompat="@drawable/imgfb"
-            android:id="@+id/imageButtonFB"
+            android:id="@+id/imageButtonFB_perusahaan"
             android:background="#00FFFFFF"
-            app:layout_constraintLeft_toRightOf="@+id/imageButtonGoogle"
+            app:layout_constraintLeft_toRightOf="@+id/imageButtonGoogle_perusahaan"
             app:layout_constraintTop_toBottomOf="@+id/textView3"/>
     <ImageButton
             android:layout_width="40dp"
@@ -144,7 +144,7 @@
             android:scaleType="fitCenter"
             android:layout_marginStart="155dp"
             app:srcCompat="@drawable/imggoogle"
-            android:id="@+id/imageButtonGoogle"
+            android:id="@+id/imageButtonGoogle_perusahaan"
             android:background="#00FFFFFF"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView3"/>
