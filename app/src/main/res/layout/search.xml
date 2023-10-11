@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="20dp"
+    android:layout_marginVertical="10dp"
+>
+
+    <RelativeLayout
+        android:layout_width="370dp"
+        android:layout_height="90dp"
+        android:background="@drawable/bghomemid"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:paddingRight="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487" app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+
+        <ImageView
+            android:id="@+id/imageViewlogosearh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/logo"/>
+
+        <TextView
+            android:id="@+id/pekerjaansearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/imageViewlogosearh"
+            android:text="Staf It"/>
+        <TextView
+            android:id="@+id/ptperusahaansearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pekerjaansearch"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/imageViewlogosearh"
+            android:text="Pt.Royal Trust"/>
+        <TextView
+            android:id="@+id/tempatpekerjaansearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ptperusahaansearch"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/imageViewlogosearh"
+            android:text="Jakarta , Indonesia"/>
+        <ImageButton
+            android:id="@+id/imageButtonlovesearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/heart"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttondetailsearch"
+            android:layout_width="59dp"
+            android:layout_height="19dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toLeftOf="@+id/buttonapplysearch"
+            android:background="@drawable/buttonhome"
+            android:padding="0dp"
+            android:text="Detail"
+            android:textColor="@color/black"
+            android:textSize="10dp"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonapplysearch"
+            android:layout_width="59dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/buttonhome"
+            android:padding="0dp"
+            android:text="Apply"
+            android:textColor="@color/black"
+            android:textSize="10dp"/>
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
