@@ -1,14 +1,254 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             xmlns:tools="http://schemas.android.com/tools"
+             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
              android:layout_width="match_parent"
              android:layout_height="match_parent"
+             android:backgroundTint="#03FFFFFF"
              tools:context=".profil">
 
-    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:paddingStart="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/dm_sans_bold"
+            android:text="Profil"
+            android:textSize="20dp"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="380dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/bgprofil"
+        android:paddingVertical="20dp"
+        android:paddingStart="30dp">
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/nova"/>
+        <TextView
+            android:id="@+id/nama_profil"
+            android:fontFamily="@font/inter_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/imageView3"
+            android:text="Nova Savira" android:textColor="@color/white"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nama_profil"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/imageView3"
+            android:fontFamily="@font/inter"
+            android:text="novao189@gmail.com" android:textColor="@color/white"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:background="@drawable/bgmenuprofil"
+        android:padding="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="200dp">
+
+        <ImageButton
+            android:id="@+id/imageButtonakunsaya"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/personprofil"/>
+        <TextView
+            android:id="@+id/textViewakunsaya"
+            android:fontFamily="@font/inter_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/imageButtonakunsaya"
+            android:text="Akun Saya"/>
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:backgroundTint="#00FFFFFF" android:src="@drawable/backprofil"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:background="@drawable/bgmenuprofil"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="280dp">
+
+        <ImageButton
+            android:id="@+id/imageButtonuploaddokumen"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/personprofil"/>
+        <TextView
+            android:id="@+id/textViewuploaddokumen"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/inter_medium"
+            android:layout_toEndOf="@+id/imageButtonuploaddokumen"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload Dokumen"/>
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:backgroundTint="#00FFFFFF" android:src="@drawable/backprofil"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:padding="10dp"
+        android:background="@drawable/bgmenuprofil"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="360dp">
+
+        <ImageButton
+            android:id="@+id/imageButtonkatasandi"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/katasandiprofil"/>
+        <TextView
+            android:id="@+id/textViewkatasandi"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/imageButtonkatasandi"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/inter_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kata Sandi"/>
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/backprofil"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:padding="10dp"
+        android:background="@drawable/bgmenuprofil"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="440dp">
+
+        <ImageButton
+            android:id="@+id/imageButtonkeluar"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/keluar"/>
+        <TextView
+            android:id="@+id/textViewkeluar"
+            android:layout_toEndOf="@+id/imageButtonkeluar"
+            android:layout_marginStart="20dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:fontFamily="@font/inter_medium"
+            android:layout_height="wrap_content"
+            android:text="Keluar"/>
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:backgroundTint="#00FFFFFF" android:src="@drawable/backprofil"/>
+    </RelativeLayout>
+
     <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="@string/hello_blank_fragment"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:fontFamily="@font/inter_medium"
+        android:textSize="14dp"
+        android:layout_marginTop="570dp"
+        android:text="More"/>
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:padding="10dp"
+        android:background="@drawable/bgmenuprofil"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="600dp">
+
+        <ImageButton
+            android:id="@+id/imageButtonpusatbantuan"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/pusatbantuan"/>
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_toEndOf="@+id/imageButtonpusatbantuan"
+            android:layout_marginStart="20dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_medium"
+            android:text="Pusat Bantuan"/>
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF" android:src="@drawable/backprofil"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:padding="10dp"
+        android:background="@drawable/bgmenuprofil"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="680dp">
+
+        <ImageButton
+            android:id="@+id/imageButtontentangaplikasi"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/tentangaplikasi"/>
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_toEndOf="@+id/imageButtontentangaplikasi"
+            android:layout_marginStart="20dp"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/inter_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tentang Aplikasi"/>
+        <ImageButton
+            android:id="@+id/imageButton6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:backgroundTint="#00FFFFFF" android:src="@drawable/backprofil"/>
+    </RelativeLayout>
+
 
 </FrameLayout>
