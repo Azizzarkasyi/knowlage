@@ -14,8 +14,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         replaceFragment(home())
 
-        binding.navbar.setOnClickListener{
-            when(it.id){
+        binding.navbar.setOnItemSelectedListener{
+            when(it.itemId){
                 R.id.home ->replaceFragment(home())
                 R.id.pesan ->replaceFragment(pesan())
                 R.id.notifikasi->replaceFragment(notifikasi())
@@ -27,6 +27,7 @@ class MainActivity : AppCompatActivity() {
                 }
             }
             true
+
         }
 
 

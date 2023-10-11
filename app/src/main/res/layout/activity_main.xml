@@ -9,16 +9,17 @@
     <FrameLayout
         android:id="@+id/frameLayout"
         android:layout_width="match_parent"
-        android:layout_height="672dp"
+        android:layout_height="761dp"
         android:layout_marginTop="4dp"
         app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
     </FrameLayout>
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/navbar"
         android:layout_width="match_parent"
-        android:layout_height="83dp"
+        android:layout_height="237dp"
         android:layout_below="@+id/frameLayout"
-        android:layout_alignParentBottom="true" android:layout_marginTop="86dp"
-        android:layout_marginBottom="1dp" app:layout_constraintTop_toBottomOf="@+id/frameLayout"
-        app:layout_constraintVertical_bias="0.532" app:menu="@menu/navbar"/>
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout" app:layout_constraintVertical_bias="0.532" app:menu="@menu/navbar"/>
 </RelativeLayout>
