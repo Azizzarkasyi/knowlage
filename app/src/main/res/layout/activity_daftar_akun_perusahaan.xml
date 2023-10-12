@@ -96,7 +96,7 @@
             android:layout_below="@+id/daftar_nomor_telepon_perusahaan"
             android:layout_centerHorizontal="true"
             android:background="@drawable/edittext"
-            android:inputType="text"
+            android:inputType="number"
             android:hint="+62"
             android:ems="10"
             android:id="@+id/editTextText_nomor_telepon_perusahaan"
