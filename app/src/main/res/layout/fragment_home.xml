@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
+<androidx.coordinatorlayout.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/fragmenthome"
     tools:context=".home">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
 <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="50dp"
@@ -39,273 +44,60 @@
 </RelativeLayout>
 
 
-    <RelativeLayout
-        android:layout_width="370dp"
-        android:layout_height="180dp"
-        android:layout_gravity="center_horizontal"
+        <RelativeLayout
+            android:layout_width="370dp"
+            android:layout_height="180dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="70dp"
+            android:id="@+id/iklanhome"
+            android:background="@drawable/bghometop"
+            android:paddingStart="20dp"
+            android:paddingTop="10dp">
+
+
+            <TextView
+                android:id="@+id/textViewfragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Temukan Loker Impian Mu dalam 10 menit"/>
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="160dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="20dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/image1"/>
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="141dp"
+                android:layout_height="120dp"
+                android:layout_below="@id/textViewfragment"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginRight="125dp"
+                android:fontFamily="@font/roboto"
+                android:text="Bagikan Preferensi mu dan dapatkan info loker dari para ahli kami bagikan keseruan kamu dalam menggunakan aplikasi ini ke teman kamu"/>
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/iklanhome"
+        android:id="@+id/recycleView_home"
         android:layout_marginTop="70dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:background="@drawable/bghometop"
-        android:paddingStart="20dp"
-        android:paddingTop="10dp">
-
-
-        <TextView
-            android:id="@+id/textViewfragment"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/roboto_bold"
-            android:text="Temukan Loker Impian Mu dalam 10 menit"/>
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="160dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginEnd="20dp"
-            android:scaleType="fitCenter"
-            android:src="@drawable/image1"/>
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="141dp"
-            android:layout_height="120dp"
-            android:layout_below="@id/textViewfragment"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="7dp"
-            android:layout_marginTop="13dp"
-            android:layout_marginRight="125dp"
-            android:fontFamily="@font/roboto"
-            android:text="Bagikan Preferensi mu dan dapatkan info loker dari para ahli kami bagikan keseruan kamu dalam menggunakan aplikasi ini ke teman kamu"/>
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="370dp"
-        android:layout_height="90dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="290dp"
-        android:background="@drawable/bghomemid"
-        android:paddingLeft="15dp"
-        android:paddingTop="15dp"
-        android:paddingRight="15dp">
-
-
-        <ImageView
-            android:id="@+id/imageViewlogohome"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:src="@drawable/logo"/>
-
-        <TextView
-            android:id="@+id/pekerjaan"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_toEndOf="@+id/imageViewlogohome"
-            android:text="Staf It"/>
-        <TextView
-            android:id="@+id/ptperusahaan"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/pekerjaan"
-            android:layout_marginStart="20dp"
-            android:layout_toEndOf="@+id/imageViewlogohome"
-            android:text="Pt.Royal Trust"/>
-        <TextView
-            android:id="@+id/tempatpekerjaan"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/ptperusahaan"
-            android:layout_marginStart="20dp"
-            android:layout_toEndOf="@+id/imageViewlogohome"
-            android:text="Jakarta , Indonesia"/>
-        <ImageButton
-            android:id="@+id/imageButton7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:backgroundTint="#00FFFFFF"
-            android:src="@drawable/heart"/>
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/button2"
-            android:layout_width="59dp"
-            android:layout_height="19dp"
-            android:layout_alignParentBottom="true"
-            android:layout_marginEnd="20dp"
-            android:layout_marginBottom="5dp"
-            android:layout_toLeftOf="@+id/button"
-            android:background="@drawable/buttonhome"
-            android:padding="0dp"
-            android:text="Detail"
-            android:textColor="@color/black"
-            android:textSize="10dp"/>
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/button"
-            android:layout_width="59dp"
-            android:layout_height="20dp"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="5dp"
-            android:background="@drawable/buttonhome"
-            android:padding="0dp"
-            android:text="Apply"
-            android:textColor="@color/black"
-            android:textSize="10dp"/>
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="-1dp"
+        android:layout_marginBottom="-4dp"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
 
     </RelativeLayout>
-    <RelativeLayout
-        android:background="@drawable/bghomemid"
-        android:paddingTop="15dp"
-        android:paddingLeft="15dp"
-        android:paddingRight="15dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="420dp"
-        android:layout_width="370dp"
-        android:layout_height="90dp">
-
-
-    <ImageView
-        android:id="@+id/imageViewlogohome1"
-        android:layout_centerVertical="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/logo"/>
-
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/pekerjaan1"
-            android:text="Staf It"
-            android:layout_toEndOf="@+id/imageViewlogohome1"
-            android:layout_marginStart="20dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/pekerjaan1"
-            android:id="@+id/ptperusahaan1"
-            android:text="Pt.Royal Trust"
-            android:layout_toEndOf="@+id/imageViewlogohome1"
-            android:layout_marginStart="20dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/ptperusahaan1"
-            android:id="@+id/tempatpekerjaan1"
-            android:text="Jakarta , Indonesia"
-            android:layout_toEndOf="@+id/imageViewlogohome1"
-            android:layout_marginStart="20dp"/>
-    <ImageButton
-        android:id="@+id/imageButton8"
-        android:layout_alignParentRight="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#00FFFFFF"
-        android:src="@drawable/heart"/>
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/button3"
-            android:layout_width="59dp"
-            android:layout_height="19dp"
-            android:textColor="@color/black"
-            android:layout_marginEnd="20dp"
-            android:layout_marginBottom="5dp"
-            android:background="@drawable/buttonhome"
-            android:layout_toLeftOf="@+id/button4"
-            android:layout_alignParentBottom="true"
-            android:textSize="10dp"
-            android:padding="0dp"
-            android:text="Detail"/>
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/button4"
-            android:layout_width="59dp"
-            android:layout_height="19dp"
-            android:background="@drawable/buttonhome"
-            android:textColor="@color/black"
-            android:layout_marginBottom="5dp"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentBottom="true"
-            android:textSize="10dp"
-            android:padding="0dp"
-            android:text="Apply"/>
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:background="@drawable/bghomemid"
-        android:paddingTop="15dp"
-        android:paddingLeft="15dp"
-        android:paddingRight="15dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="550dp"
-        android:layout_width="370dp"
-        android:layout_height="90dp">
-
-
-    <ImageView
-        android:id="@+id/imageViewlogohome2"
-        android:layout_centerVertical="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/logo"/>
-
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/pekerjaan2"
-            android:text="Staf It"
-            android:layout_toEndOf="@+id/imageViewlogohome2"
-            android:layout_marginStart="20dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/pekerjaan2"
-            android:id="@+id/ptperusahaan2"
-            android:text="Pt.Royal Trust"
-            android:layout_toEndOf="@+id/imageViewlogohome2"
-            android:layout_marginStart="20dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/ptperusahaan2"
-            android:id="@+id/tempatpekerjaan2"
-            android:text="Jakarta , Indonesia"
-            android:layout_toEndOf="@+id/imageViewlogohome2"
-            android:layout_marginStart="20dp"/>
-    <ImageButton
-        android:id="@+id/imageButton9"
-        android:layout_alignParentRight="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#00FFFFFF"
-        android:src="@drawable/heart"/>
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/button5"
-            android:layout_width="59dp"
-            android:layout_height="19dp"
-            android:textColor="@color/black"
-            android:background="@drawable/buttonhome"
-            android:layout_toLeftOf="@+id/button6"
-            android:layout_marginBottom="5dp"
-            android:layout_alignParentBottom="true"
-            android:textSize="10dp"
-            android:layout_marginEnd="20dp"
-            android:padding="0dp"
-            android:text="Detail"/>
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/button6"
-            android:layout_width="59dp"
-            android:layout_height="19dp"
-            android:textColor="@color/black"
-            android:layout_marginBottom="5dp"
-            android:background="@drawable/buttonhome"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentBottom="true"
-            android:textSize="10dp"
-            android:padding="0dp"
-            android:text="Apply"/>
-    </RelativeLayout>
-
-
-</FrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

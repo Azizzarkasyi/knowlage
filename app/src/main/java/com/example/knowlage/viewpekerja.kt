@@ -1,5 +1,6 @@
 package com.example.knowlage
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -33,6 +34,12 @@ class viewpekerja : AppCompatActivity() {
 
         pekerjaanadapter = pekerjaanadapter(pekerjaanList)
         recyclerView.adapter = pekerjaanadapter
+
+        pekerjaanadapter.onClik ={
+            val  intent = Intent(this,Detail_pekerjaan::class.java)
+            intent.putExtra("pekerja",it)
+            startActivity(intent)
+        }
 
 
 

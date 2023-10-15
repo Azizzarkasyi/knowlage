@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
+import androidx.recyclerview.widget.RecyclerView
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -19,6 +20,8 @@ private const val ARG_PARAM2 = "param2"
  * create an instance of this fragment.
  */
 class home : Fragment() {
+    private lateinit var pekerjaanList :ArrayList<pekerjaan>
+    private lateinit var pekerjaanadapter: pekerjaanadapter
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -27,11 +30,38 @@ class home : Fragment() {
         // Inflate the layout for this fragment
        val next =inflater.inflate(R.layout.fragment_home, container, false)
         val btn :ImageButton = next.findViewById(R.id.imageButtonsearch)
+        val recyclerView :RecyclerView = next.findViewById(R.id.recycleView_home)
         btn.setOnClickListener{
             val intent = Intent(activity,pencarian::class.java)
             startActivity(intent)
         }
+
+
+        pekerjaanList = ArrayList()
+
+        pekerjaanList.add(pekerjaan(R.drawable.logo,"UI UX Desainer", "PT.Royal Trust","Jakarta,Indonesia"))
+        pekerjaanList.add(pekerjaan(R.drawable.logo,"Data Analyst", "PT. Dyandra Promosindo","Jakarta,Indonesia"))
+        pekerjaanList.add(pekerjaan(R.drawable.logo,"Developer Enginer", "PT. Royale","Bandung, Indonesia"))
+        pekerjaanList.add(pekerjaan(R.drawable.logo,"Account Manager", "PT.Royal Trust","Jakarta,Indonesia"))
+        pekerjaanList.add(pekerjaan(R.drawable.logo,"Web Development", "PT.Royal Trust","Jakarta,Indonesia"))
+        pekerjaanList.add(pekerjaan(R.drawable.logo,"Developer Enginer", "PT.Royal Trust","Jakarta,Indonesia"))
+        pekerjaanList.add(pekerjaan(R.drawable.logo,"UI UX Desainer", "PT.Royal Trust","Jakarta,Indonesia"))
+        pekerjaanList.add(pekerjaan(R.drawable.logo,"UI UX Desainer", "PT.Royal Trust","Jakarta,Indonesia"))
+        pekerjaanList.add(pekerjaan(R.drawable.logo,"UI UX Desainer", "PT.Royal Trust","Jakarta,Indonesia"))
+        pekerjaanList.add(pekerjaan(R.drawable.logo,"UI UX Desainer", "PT.Royal Trust","Jakarta,Indonesia"))
+        pekerjaanList.add(pekerjaan(R.drawable.logo,"UI UX Desainer", "PT.Royal Trust","Jakarta,Indonesia"))
+
+
+        pekerjaanadapter = pekerjaanadapter(pekerjaanList)
+        recyclerView.adapter = pekerjaanadapter
+
+        pekerjaanadapter.onClik ={
+            val  intent = Intent(activity,Detail_pekerjaan::class.java)
+            intent.putExtra("pekerja",it)
+            startActivity(intent)
+        }
         return next
     }
+
 
 }

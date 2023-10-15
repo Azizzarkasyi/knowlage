@@ -4,6 +4,7 @@ import android.icu.text.Transliterator.Position
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.view.menu.MenuView.ItemView
@@ -11,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView
 
 class pekerjaanadapter( private val pekerjaanList:List<pekerjaan>)
     : RecyclerView.Adapter<pekerjaanadapter.pekejaanViewHolder>(){
+        var onClik : ((pekerjaan)->Unit)? = null
 
 
 
@@ -19,6 +21,9 @@ class pekerjaanadapter( private val pekerjaanList:List<pekerjaan>)
         val textView : TextView = itemView.findViewById(R.id.pekerjaansearch)
         val textView1 : TextView = itemView.findViewById(R.id.ptperusahaansearch)
         val textView2 : TextView = itemView.findViewById(R.id.tempatpekerjaansearch)
+        val detail : TextView = itemView.findViewById(R.id.buttondetailsearch)
+        val apply : TextView = itemView.findViewById(R.id.buttonapplysearch)
+
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): pekejaanViewHolder {
@@ -34,6 +39,10 @@ class pekerjaanadapter( private val pekerjaanList:List<pekerjaan>)
         holder.textView.text = pekerja.pekerjaaan
         holder.textView1.text = pekerja.PT
         holder.textView2.text = pekerja.tempat
+        holder.detail.setOnClickListener{
+            onClik?.invoke(pekerja)
+
+        }
     }
 
     override fun getItemCount(): Int {
