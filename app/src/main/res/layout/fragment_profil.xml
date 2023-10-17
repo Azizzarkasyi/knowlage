@@ -20,6 +20,9 @@
             android:textSize="20dp"/>
 
     </RelativeLayout>
+    <androidx.cardview.widget.CardView android:layout_width="wrap_content" android:layout_height="match_parent">
+
+    </androidx.cardview.widget.CardView>
     <RelativeLayout
         android:layout_width="380dp"
         android:layout_height="90dp"
@@ -52,6 +55,7 @@
 
     </RelativeLayout>
     <RelativeLayout
+        android:id="@+id/akunsaya_profil"
         android:layout_width="350dp"
         android:layout_height="70dp"
         android:background="@drawable/bgmenuprofil"
@@ -83,6 +87,7 @@
             android:backgroundTint="#00FFFFFF" android:src="@drawable/backprofil"/>
     </RelativeLayout>
     <RelativeLayout
+        android:id="@+id/upload_dokumen_profil"
         android:padding="10dp"
         android:layout_width="350dp"
         android:layout_height="70dp"
@@ -113,6 +118,7 @@
             android:layout_height="wrap_content" android:backgroundTint="#00FFFFFF" android:src="@drawable/backprofil"/>
     </RelativeLayout>
     <RelativeLayout
+        android:id="@+id/kata_sandi_profil"
         android:layout_width="350dp"
         android:layout_height="70dp"
         android:padding="10dp"
@@ -146,6 +152,7 @@
             android:src="@drawable/backprofil"/>
     </RelativeLayout>
     <RelativeLayout
+        android:id="@+id/keluar"
         android:layout_width="350dp"
         android:layout_height="70dp"
         android:padding="10dp"
@@ -174,7 +181,9 @@
             android:layout_centerVertical="true"
             android:layout_alignParentRight="true"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:backgroundTint="#00FFFFFF" android:src="@drawable/backprofil"/>
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/backprofil"/>
     </RelativeLayout>
 
     <TextView

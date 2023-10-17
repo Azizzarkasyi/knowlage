@@ -22,7 +22,6 @@ class pekerjaanadapter( private val pekerjaanList:List<pekerjaan>)
         val textView1 : TextView = itemView.findViewById(R.id.ptperusahaansearch)
         val textView2 : TextView = itemView.findViewById(R.id.tempatpekerjaansearch)
         val detail : TextView = itemView.findViewById(R.id.buttondetailsearch)
-        val apply : TextView = itemView.findViewById(R.id.buttonapplysearch)
 
     }
 
@@ -51,3 +50,6 @@ class pekerjaanadapter( private val pekerjaanList:List<pekerjaan>)
     }
 
 }
+
+
+

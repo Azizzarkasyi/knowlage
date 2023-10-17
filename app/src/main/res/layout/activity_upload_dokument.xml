@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Upload_dokument">
+    <RelativeLayout
+        android:id="@+id/head_upload_dokument"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:fontFamily="@font/dm_sans_bold"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/imageButton18"
+            android:id="@+id/textView41"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload Dokument"/>
+        <ImageButton
+            android:id="@+id/imageButton18"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#00FFFFFF"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/back"/>
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/head_upload_dokument"
+        android:id="@+id/recycleView2"
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"/>
+</RelativeLayout>

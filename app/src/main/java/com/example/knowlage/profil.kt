@@ -1,59 +1,100 @@
 package com.example.knowlage
 
+import android.app.Dialog
+import android.content.Intent
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.Window
+import android.widget.ImageButton
+import android.widget.RelativeLayout
+import android.widget.TextView
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [profil.newInstance] factory method to
- * create an instance of this fragment.
- */
 class profil : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
-    }
+    private lateinit var imageButton: ImageButton
+    private lateinit var relativeLayout: RelativeLayout
+    private lateinit var imageButton1: ImageButton
+    private lateinit var relativeLayout1: RelativeLayout
+    private lateinit var imageButton2: ImageButton
+    private lateinit var relativeLayout2: RelativeLayout
+    private lateinit var imageButton3: ImageButton
+    private lateinit var relativeLayout3: RelativeLayout
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_profil, container, false)
+        val next =inflater.inflate(R.layout.fragment_profil, container, false)
+        imageButton =next.findViewById(R.id.imageButton)
+        relativeLayout =next.findViewById(R.id.akunsaya_profil)
+        imageButton1 =next.findViewById(R.id.imageButton3)
+        relativeLayout1 =next.findViewById(R.id.kata_sandi_profil)
+        imageButton2 =next.findViewById(R.id.imageButton4)
+        relativeLayout2 =next.findViewById(R.id.keluar)
+        imageButton3 =next.findViewById(R.id.imageButton2)
+        relativeLayout3 =next.findViewById(R.id.upload_dokumen_profil)
+
+        relativeLayout.setOnClickListener {
+            val intent = Intent(activity,Akun_saya::class.java)
+            startActivity(intent)
+        }
+        relativeLayout1.setOnClickListener {
+            val intent = Intent(activity,Kata_Sandi::class.java)
+            startActivity(intent)
+        }
+        imageButton.setOnClickListener {
+            val intent = Intent(activity,Akun_saya::class.java)
+            startActivity(intent)
+        }
+        relativeLayout3.setOnClickListener {
+            val intent = Intent(activity,Upload_dokument::class.java)
+            startActivity(intent)
+        }
+        imageButton3.setOnClickListener {
+            val intent = Intent(activity,Upload_dokument::class.java)
+            startActivity(intent)
+        }
+        imageButton1.setOnClickListener {
+            val intent = Intent(activity,Kata_Sandi::class.java)
+            startActivity(intent)
+        }
+        imageButton2.setOnClickListener {
+            val message :String? ="Yakin Ingin Keluar?"
+            showCustomDialog(message)
+        }
+        relativeLayout2.setOnClickListener {
+            val message :String? ="Yakin Ingin Keluar?"
+            showCustomDialog(message)
+        }
+        return next
     }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment profil.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            profil().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
+    private fun showCustomDialog(message: String?) {
+        val dialog = Dialog(activity as AppCompatActivity)
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
+        dialog.setCancelable(false)
+        dialog.setContentView(R.layout.dialog_alert)
+        dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+
+        val view :TextView = dialog.findViewById(R.id.textView38)
+        val btyes :TextView = dialog.findViewById(R.id.button3)
+        val btno :TextView = dialog.findViewById(R.id.button2)
+        view.text=(message)
+        btyes.setOnClickListener{
+            val intent =Intent(activity,halaman_pilih::class.java)
+            startActivity(intent)
+        }
+        btno.setOnClickListener{
+            dialog.dismiss()
+        }
+        dialog.show()
     }
+
 }

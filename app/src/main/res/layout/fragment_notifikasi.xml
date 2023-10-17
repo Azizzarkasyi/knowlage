@@ -3,13 +3,132 @@
              xmlns:tools="http://schemas.android.com/tools"
              android:layout_width="match_parent"
              android:layout_height="match_parent"
-             android:background="@color/design_default_color_on_primary"
              tools:context=".notifikasi">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="@string/hello_blank_fragment"/>
+            android:layout_height="72dp"
+            android:id="@+id/fragmentlamara"
+            android:paddingStart="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/dm_sans_bold"
+                android:text="Notifikasi Lamaranmu ada disini"
+                android:textSize="20dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:background="@drawable/bgmenuprofil"
+            android:id="@+id/bot_rel_det"
+            android:layout_width="366dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fragmentlamara"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:padding="10dp">
+            <TextView
+                android:fontFamily="@font/roboto_medium"
+                android:layout_alignParentStart="true"
+                android:id="@+id/textViewlamaranpekerjaan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:text="Account Manager"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/pembatas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginTop="20dp"
+                android:text="|"
+                android:textSize="40dp"/>
+
+            <TextView
+                android:fontFamily="@font/roboto_medium"
+                android:id="@+id/textViewlamaranPT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_toEndOf="@+id/pembatas"
+                android:gravity="center"
+                android:text="PT. Royal Trust"
+                android:textSize="20dp"/>
+            <TextView
+                android:id="@+id/textViewlamarantempat"
+                android:fontFamily="@font/roboto_medium"
+                android:layout_below="@+id/textViewlamaranpekerjaan"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:text="Jakarta, Indonesia"/>
+            <TextView
+                android:id="@+id/textView14"
+                android:fontFamily="@font/roboto_medium"
+                android:layout_below="@+id/textViewlamarantempat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Full Time"/>
+            <TextView
+                android:layout_marginTop="20dp"
+                android:id="@+id/textViewlamaranbulan"
+                android:fontFamily="@font/roboto_medium"
+                android:layout_below="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selamat anda lulus pada tahap administrasi dalam lamaran kerja di perusahaan kami."/>
+            <TextView
+                android:id="@+id/textViewpesanhari"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewlamaranbulan"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Dimohon untuk segera mengkonfirmasi notifikasi ini agar bisa melanjutkan tahap berikutnya."/>
+            <TextView
+                android:id="@+id/pesandeadline"
+                android:layout_marginTop="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewpesanhari"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Berakhir dalam 3 hari."/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:background="@drawable/buttongreen"
+                android:id="@+id/button8"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/pesandeadline"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:layout_height="25dp"
+                android:text="Terima"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button9"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:textColor="@color/white"
+                android:background="@drawable/buttonred2"
+                android:layout_below="@id/pesandeadline"
+                android:layout_width="wrap_content"
+                android:layout_toStartOf="@id/button8"
+                android:layout_height="25dp"
+                android:text="Tolak"/>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
 
 </FrameLayout>

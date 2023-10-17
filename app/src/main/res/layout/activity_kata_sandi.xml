@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Kata_Sandi">
+    <RelativeLayout
+        android:id="@+id/head_kata_sandi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+        <ImageButton
+            android:id="@+id/imageButton16"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#00FFFFFF"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/back"/>
+        <TextView
+            android:textSize="20dp"
+            android:fontFamily="@font/dm_sans_bold"
+            android:layout_toEndOf="@+id/imageButton16"
+            android:layout_marginStart="20dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/textView32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kata Sandi"/>
+
+
+    </RelativeLayout>
+
+<RelativeLayout
+    android:layout_below="@+id/head_kata_sandi"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:fontFamily="@font/inter_medium"
+        android:textSize="13dp"
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kata sandi Anda harus lebih dari enam karakter dan berisi angka, huruf, dan karakter.
+
+ "/>
+
+    <TextView
+        android:textSize="15dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/textView33"
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kata sandi saat ini"/>
+    <EditText
+        android:paddingStart="20dp"
+        android:background="@drawable/edittext"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/textView34"
+        android:id="@+id/editTextText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="text"/>
+    <TextView
+        android:textSize="15dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/editTextText"
+        android:id="@+id/textView35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kata sandi baru"/>
+    <EditText
+        android:paddingStart="20dp"
+        android:background="@drawable/edittext"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/textView35"
+        android:id="@+id/editTextText3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="text"/>
+    <TextView
+        android:textSize="15dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/editTextText3"
+        android:id="@+id/textView36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Konfimasi kata sandi baru"/>
+    <EditText
+        android:paddingStart="20dp"
+        android:background="@drawable/edittext"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/textView36"
+        android:id="@+id/editTextText4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="text"/>
+    <TextView
+        android:fontFamily="@font/montserrat_medium"
+        android:id="@+id/textView37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextText4"
+        android:layout_marginTop="10dp"
+        android:textStyle=""
+        android:text="@string/underline"
+        android:textColor="#6FA9B7"/>
+
+
+</RelativeLayout>
+
+
+
+
+</RelativeLayout>

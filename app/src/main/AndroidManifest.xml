@@ -13,6 +13,21 @@
         android:theme="@style/Theme.Knowlage"
         tools:targetApi="31">
         <activity
+            android:name=".succes"
+            android:exported="false"/>
+        <activity
+            android:name=".Apply_lamaran"
+            android:exported="false"/>
+        <activity
+            android:name=".Kata_Sandi"
+            android:exported="false"/>
+        <activity
+            android:name=".Upload_dokument"
+            android:exported="false"/>
+        <activity
+            android:name=".Akun_saya"
+            android:exported="false"/>
+        <activity
             android:name=".Detail_pekerjaan"
             android:exported="false"/>
         <activity

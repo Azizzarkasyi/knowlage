@@ -11,8 +11,7 @@ data class pekerjaan(val image : Int ,val  pekerjaaan : String, val  PT : String
         parcel.readString()!!,
         parcel.readString()!!,
         parcel.readString()!!
-    ) {
-    }
+    )
 
     override fun writeToParcel(parcel: Parcel, flags: Int) {
         parcel.writeInt(image)

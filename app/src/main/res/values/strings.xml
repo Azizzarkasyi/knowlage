@@ -2,5 +2,7 @@
     <string name="app_name">knowlage</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="deskripsi_j">Deskripsi Job Target : mencapai target yang telah di tentukan Monitoring Dan analisia progres tim dan distributor memaksimalkan distribusi produk di area yang dicover Kualifikasi : Min. Pendidikan S1 Jurusan IT Min 3 Tahun pengalaman dibidang terkait Menguasai area jobs Memiliki kemampuan komunikasi yang baik Disiplin dan memiliki kemampuan pemimpin yang baik </string>
+    <string name="underline">
+        <u>Lupa kata sandi ?</u>
+    </string>
 </resources>
