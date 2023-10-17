@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:padding="20dp"
+    android:background="@drawable/bgprofil"
+    android:layout_height="200dp">
+
+
+    <ImageView
+        android:id="@+id/imageView111"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        android:layout_centerVertical="true"
+        app:srcCompat="@drawable/kai"/>
+    <LinearLayout
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/imageView111"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/textView451"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/imageView11"
+            android:layout_weight="1"
+            android:text="PT. Karya Agung Tbk. "
+            android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/textView461"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Info@Karyaagung.com"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+</RelativeLayout>

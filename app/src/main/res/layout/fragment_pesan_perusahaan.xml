@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".pesan_perusahaan">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/fragment_pesan_perusahaan"
+        android:paddingStart="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/dm_sans_bold"
+            android:text="Pesan"
+            android:textSize="20dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:background="@drawable/bgmenuprofil"
+        android:layout_width="350dp"
+        android:padding="10dp"
+        android:id="@+id/nova"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/fragment_pesan_perusahaan"
+        android:layout_height="70dp">
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/imageView94"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/nova"/>
+        <ImageView
+            android:id="@+id/imageView102"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/centangdua"/>
+        <TextView
+            android:textSize="14dp"
+            android:fontFamily="@font/inter_bold"
+            android:layout_toEndOf="@+id/imageView94"
+            android:id="@+id/textView422"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nova Hartini, S.Tr., S.Kom"/>
+        <TextView
+            android:textSize="10dp"
+            android:fontFamily="@font/inter"
+            android:layout_toEndOf="@+id/imageView94"
+            android:layout_below="@id/textView422"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/textView43"
+            android:layout_marginStart="10dp"
+            android:layout_toStartOf="@+id/imageView102"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selamat sore, Nova. Kami baru saja
+menerima pengajuan lamaran anda..."/>
+        <TextView
+            android:fontFamily="@font/inter"
+            android:textSize="10dp"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/textView441"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5.30 PM"/>
+
+    </RelativeLayout>
+
+
+        <RelativeLayout
+            android:background="@drawable/bgmenuprofil"
+            android:layout_width="350dp"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/nova"
+            android:layout_height="70dp">
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/imageView94f"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/pangeran"/>
+            <ImageView
+                android:id="@+id/imageView102f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/centangdua"/>
+            <TextView
+                android:textSize="14dp"
+                android:fontFamily="@font/inter_bold"
+                android:layout_toEndOf="@+id/imageView94f"
+                android:id="@+id/textView422f"
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rizqi Halimawan"/>
+            <TextView
+                android:textSize="10dp"
+                android:fontFamily="@font/inter"
+                android:layout_toEndOf="@+id/imageView94f"
+                android:layout_below="@id/textView422f"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/textView43f"
+                android:layout_marginStart="10dp"
+                android:layout_toStartOf="@+id/imageView102f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selamat sore, Nova. Kami baru saja
+menerima pengajuan lamaran anda..."/>
+            <TextView
+                android:fontFamily="@font/inter"
+                android:textSize="10dp"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/textView441f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5.30 PM"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>

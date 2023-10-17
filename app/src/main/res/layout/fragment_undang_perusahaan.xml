@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".undang_perusahaan">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/fragment_undang_perusahaan"
+            android:paddingStart="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/dm_sans_bold"
+                android:text="Pelamar Yang Sudah Di Terima"
+                android:textSize="20dp"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_below="@id/fragment_undang_perusahaan"
+            android:layout_width="370dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bghomemid"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:id="@+id/ppppp"
+            android:paddingRight="15dp"
+            tools:ignore="MissingConstraints">
+
+
+            <ImageView
+                android:id="@+id/imageViewlogop"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/logo"/>
+
+            <TextView
+                android:id="@+id/pekerjaanp"
+                android:textSize="14dp"
+                android:fontFamily="@font/inter_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/imageViewlogop"
+                android:text="Web Development"/>
+            <TextView
+                android:id="@+id/ptperusahaanp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pekerjaanp"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/imageViewlogop"
+                android:text="Pt.Royal Trust"/>
+            <TextView
+                android:id="@+id/tempatpekerjaanperusahaan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ptperusahaanp"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/imageViewlogop"
+                android:text="Jakarta , Indonesia"/>
+            <TextView
+                android:id="@+id/deadlineperusahaan"
+                android:textSize="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tempatpekerjaanperusahaan"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/imageViewlogop"
+                android:text="Deadline 20 Oktober 2023"/>
+
+
+        </RelativeLayout>
+        <View
+            android:layout_width="360dp"
+            android:layout_height="3dp"
+            android:id="@+id/line22"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/ppppp"
+            android:background="@color/black"/>
+        <RelativeLayout
+            android:layout_below="@id/line22"
+            android:layout_width="370dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="190dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bghomemid"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:id="@+id/relativeLayout4"
+            android:paddingRight="15dp">
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/adel"/>
+            <TextView
+                android:fontFamily="@font/inter_bold"
+                android:layout_toEndOf="@+id/imageView12"
+                android:layout_marginStart="10dp"
+                android:id="@+id/textView47"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adelia Sungkar, S.tr.T., M.T."/>
+            <TextView
+                android:fontFamily="@font/inter_medium"
+                android:layout_below="@id/textView47"
+                android:layout_toEndOf="@+id/imageView12"
+                android:layout_marginStart="10dp"
+                android:id="@+id/textView48"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Riwayat Pekerjaan : PT. Unilever Indonesia Tbk"/>
+            <TextView
+                android:fontFamily="@font/inter_medium"
+                android:layout_below="@+id/textView48"
+                android:layout_toEndOf="@+id/imageView12"
+                android:layout_marginStart="10dp"
+                android:id="@+id/textView49"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pengalaman Kerja : Manager"/>
+            <TextView
+                android:fontFamily="@font/inter_medium"
+                android:layout_below="@+id/textView49"
+                android:layout_toEndOf="@+id/imageView12"
+                android:layout_marginStart="10dp"
+                android:id="@+id/textView50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="E-Mail : aadeliasungkar27@gmail.com"/>
+            <TextView
+                android:fontFamily="@font/inter_medium"
+                android:layout_below="@id/textView50"
+                android:layout_toEndOf="@+id/imageView12"
+                android:layout_marginStart="10dp"
+                android:id="@+id/textView51"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No. Telp : 089603741620"/>
+            <TextView
+                android:fontFamily="@font/inter_medium"
+                android:layout_below="@id/textView51"
+                android:layout_toEndOf="@+id/imageView12"
+                android:layout_marginStart="10dp"
+                android:id="@+id/textView52"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pengalaman Kerja : 8 Tahun"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button10"
+                android:background="@drawable/buttonhome"
+                android:layout_width="wrap_content"
+                android:textAllCaps="false"
+                android:layout_marginBottom="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_height="20dp"
+                android:text="Chat Pelamar"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_below="@id/relativeLayout4"
+            android:layout_width="370dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="190dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bghomemid"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:id="@+id/relativeLayout5"
+            android:paddingRight="15dp">
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/nova"/>
+            <TextView
+                android:fontFamily="@font/inter_bold"
+                android:layout_toEndOf="@+id/imageView13"
+                android:layout_marginStart="10dp"
+                android:id="@+id/textView47r"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Novi Hartini, S.Tr., S.Kom."/>
+            <TextView
+                android:fontFamily="@font/inter_medium"
+                android:layout_below="@id/textView47r"
+                android:layout_toEndOf="@+id/imageView13"
+                android:layout_marginStart="10dp"
+                android:id="@+id/textView48r"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Riwayat Pekerjaan : PT. Sinarmas Tbk"/>
+            <TextView
+                android:fontFamily="@font/inter_medium"
+                android:layout_below="@+id/textView48r"
+                android:layout_toEndOf="@+id/imageView13"
+                android:layout_marginStart="10dp"
+                android:id="@+id/textView49r"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pengalaman Kerja : Staf Manager"/>
+            <TextView
+                android:fontFamily="@font/inter_medium"
+                android:layout_below="@+id/textView49r"
+                android:layout_toEndOf="@+id/imageView13"
+                android:layout_marginStart="10dp"
+                android:id="@+id/textView50r"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="E-Mail : novan0189@gmail.com"/>
+            <TextView
+                android:fontFamily="@font/inter_medium"
+                android:layout_below="@id/textView50r"
+                android:layout_toEndOf="@+id/imageView13"
+                android:layout_marginStart="10dp"
+                android:id="@+id/textView51r"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No. Telp : 082277459023"/>
+            <TextView
+                android:fontFamily="@font/inter_medium"
+                android:layout_below="@id/textView51r"
+                android:layout_toEndOf="@+id/imageView13"
+                android:layout_marginStart="10dp"
+                android:id="@+id/textView52r"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pengalaman Kerja : 4 Tahun"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button10r"
+                android:background="@drawable/buttonhome"
+                android:layout_width="wrap_content"
+                android:textAllCaps="false"
+                android:layout_marginBottom="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_height="20dp"
+                android:text="Chat Pelamar"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_below="@id/relativeLayout5"
+            android:layout_width="370dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="190dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bghomemid"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:id="@+id/relativeLayout6"
+            android:paddingRight="15dp">
+
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/pangeran"/>
+            <TextView
+                android:fontFamily="@font/inter_bold"
+                android:layout_toEndOf="@+id/imageView14"
+                android:layout_marginStart="10dp"
+                android:id="@+id/textView47v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rizqi Halimawan, S.Kom., M.A."/>
+            <TextView
+                android:fontFamily="@font/inter_medium"
+                android:layout_below="@id/textView47v"
+                android:layout_toEndOf="@+id/imageView14"
+                android:layout_marginStart="10dp"
+                android:id="@+id/textView48v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Riwayat Pekerjaan : PT. Tani Jaya Tbk"/>
+            <TextView
+                android:fontFamily="@font/inter_medium"
+                android:layout_below="@+id/textView48v"
+                android:layout_toEndOf="@+id/imageView14"
+                android:layout_marginStart="10dp"
+                android:id="@+id/textView49v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pengalaman Kerja : Manager"/>
+            <TextView
+                android:fontFamily="@font/inter_medium"
+                android:layout_below="@+id/textView49v"
+                android:layout_toEndOf="@+id/imageView14"
+                android:layout_marginStart="10dp"
+                android:id="@+id/textView50v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="E-Mail : rizkihalll23@gmail.com"/>
+            <TextView
+                android:fontFamily="@font/inter_medium"
+                android:layout_below="@id/textView50v"
+                android:layout_toEndOf="@+id/imageView14"
+                android:layout_marginStart="10dp"
+                android:id="@+id/textView51v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No. Telp : 081356128144"/>
+            <TextView
+                android:fontFamily="@font/inter_medium"
+                android:layout_below="@id/textView51v"
+                android:layout_toEndOf="@+id/imageView14"
+                android:layout_marginStart="10dp"
+                android:id="@+id/textView52v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pengalaman Kerja : 7 Tahun"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button10v"
+                android:background="@drawable/buttonhome"
+                android:layout_width="wrap_content"
+                android:textAllCaps="false"
+                android:layout_marginBottom="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_height="20dp"
+                android:text="Chat Pelamar"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_below="@id/relativeLayout6"
+            android:layout_width="370dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bghomemid"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:id="@+id/relativeLayout7"
+            android:paddingRight="15dp">
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>

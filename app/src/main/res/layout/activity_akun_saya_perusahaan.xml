@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Akun_saya_perusahaan">
+    <RelativeLayout
+        android:id="@+id/head_akunsayap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <TextView
+            android:fontFamily="@font/dm_sans_bold"
+            android:id="@+id/textView29p"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="30dp"
+            android:layout_toEndOf="@+id/imageButton7p"
+            android:text="Akun Saya"
+            android:textSize="20dp"/>
+        <ImageButton
+            android:id="@+id/imageButton7p"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#00FFFFFF"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/back"/>
+
+
+    </RelativeLayout>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1p"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/head_akunsayap"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/imageView4p"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:backgroundTint="#00FFFFFF"
+                app:srcCompat="@drawable/personprofil"/>
+            <TextView
+                android:fontFamily="@font/inter_medium"
+                android:id="@+id/textView9p"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/imageView4p"
+                android:text="Nomor Telepon"/>
+            <TextView
+                android:fontFamily="@font/inter_medium"
+                android:id="@+id/textView30p"
+                android:layout_toStartOf="@+id/imageButton10p"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="0852-72xx-xxxx"/>
+            <ImageButton
+                android:id="@+id/imageButton10p"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#00FFFFFF"
+                app:srcCompat="@drawable/backprofil"/>
+
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card2p"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/card1p"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/imageView5p"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#00FFFFFF"
+                app:srcCompat="@drawable/personprofil"/>
+            <TextView
+                android:fontFamily="@font/inter_medium"
+                android:id="@+id/textView12p"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/imageView5p"
+                android:text="Email"/>
+            <TextView
+                android:fontFamily="@font/inter_medium"
+                android:id="@+id/textView13p"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView12p"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/imageView5p"
+                android:text="novan0189@gmail.com"/>
+            <ImageButton
+                android:layout_toStartOf="@+id/imageButton14p"
+                android:layout_centerVertical="true"
+                android:id="@+id/imageButton9p"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#00FFFFFF"
+                app:srcCompat="@drawable/peringatan"/>
+            <ImageButton
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/imageButton14p"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#00FFFFFF"
+                app:srcCompat="@drawable/backprofil"/>
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

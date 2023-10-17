@@ -31,7 +31,7 @@ class login_perusahaan : AppCompatActivity() {
                 return@setOnClickListener
 
             }else{
-            val intent = Intent(this,MainActivity::class.java)
+            val intent = Intent(this,MainActivity2::class.java)
             startActivity(intent)
             }
         }

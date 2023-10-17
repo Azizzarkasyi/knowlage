@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_marginHorizontal="20dp"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_below="@id/line22"
+        android:layout_width="370dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="190dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bghomemid"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:id="@+id/relativeLayout4"
+        android:paddingRight="15dp">
+
+        <ImageView
+            android:id="@+id/imageView12c"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/adel"/>
+        <TextView
+            android:fontFamily="@font/inter_bold"
+            android:layout_toEndOf="@+id/imageView12c"
+            android:layout_marginStart="10dp"
+            android:id="@+id/textView47c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adelia Sungkar, S.tr.T., M.T."/>
+        <TextView
+            android:fontFamily="@font/inter_medium"
+            android:layout_below="@id/textView47c"
+            android:layout_toEndOf="@+id/imageView12c"
+            android:layout_marginStart="10dp"
+            android:id="@+id/textView48c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Riwayat Pekerjaan : PT. Unilever Indonesia Tbk"/>
+        <TextView
+            android:fontFamily="@font/inter_medium"
+            android:layout_below="@+id/textView48c"
+            android:layout_toEndOf="@+id/imageView12c"
+            android:layout_marginStart="10dp"
+            android:id="@+id/textView49c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pengalaman Kerja : Manager"/>
+        <TextView
+            android:fontFamily="@font/inter_medium"
+            android:layout_below="@+id/textView49c"
+            android:layout_toEndOf="@+id/imageView12c"
+            android:layout_marginStart="10dp"
+            android:id="@+id/textView50c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E-Mail : aadeliasungkar27@gmail.com"/>
+        <TextView
+            android:fontFamily="@font/inter_medium"
+            android:layout_below="@id/textView50c"
+            android:layout_toEndOf="@+id/imageView12c"
+            android:layout_marginStart="10dp"
+            android:id="@+id/textView51c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No. Telp : 089603741620"/>
+        <TextView
+            android:fontFamily="@font/inter_medium"
+            android:layout_below="@id/textView51c"
+            android:layout_toEndOf="@+id/imageView12c"
+            android:layout_marginStart="10dp"
+            android:id="@+id/textView52c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pengalaman Kerja : 8 Tahun"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button10c"
+            android:background="@drawable/buttonhome"
+            android:layout_width="wrap_content"
+            android:textAllCaps="false"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_height="20dp"
+            android:text="Info"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

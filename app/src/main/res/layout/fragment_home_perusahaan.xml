@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".home_perusahaan">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/fragment_home_perusahaan"
+        android:paddingStart="20dp">
+        <ImageButton
+            android:layout_centerVertical="true"
+            android:id="@+id/imageButtonmenuPerusahaan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/menu"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/dm_sans_bold"
+            android:text="Daftar Pencari Pekerjaan"
+            android:textSize="20dp"/>
+    </RelativeLayout>
+        <TextView
+            android:layout_marginStart="20dp"
+            android:textSize="18dp"
+            android:fontFamily="@font/inter_bold"
+            android:layout_below="@+id/fragment_home_perusahaan"
+            android:id="@+id/textView53"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Statistik Lowongan Anda"/>
+        <TextView
+            android:id="@+id/textView54"
+            android:textSize="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/textView53"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lihat langsung data lowongan yang kamu upload"/>
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:background="@color/ungu"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/textView54"
+            android:layout_width="370dp"
+            android:padding="10dp"
+            android:id="@+id/view3"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="35dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/inter_bold"
+                android:id="@+id/textView55"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"/>
+            <TextView
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:id="@+id/textView56"
+                android:layout_below="@+id/textView55"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lowongan yang anda unggah"/>
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:id="@+id/line09"
+                android:layout_below="@+id/textView56"
+                android:background="@android:color/black"/>
+            <TextView
+                android:textColor="@color/black"
+                android:fontFamily="@font/inter_bold"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/line09"
+                android:id="@+id/textView57"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="123"/>
+            <TextView
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/textView57"
+                android:id="@+id/textView58"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pelamar"/>
+            <TextView
+                android:textColor="@color/black"
+                android:fontFamily="@font/inter_bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/textView58"
+                android:layout_below="@+id/line09"
+                android:id="@+id/textView59"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1,2k"/>
+            <TextView
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/textView58"
+                android:layout_below="@+id/textView59"
+                android:id="@+id/textView60"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jumlah Klik"/>
+            <TextView
+                android:textColor="@color/black"
+                android:fontFamily="@font/inter_bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/textView60"
+                android:layout_below="@+id/line09"
+                android:id="@+id/textView61"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="34x"/>
+            <TextView
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/textView60"
+                android:layout_below="@+id/textView61"
+                android:id="@+id/textView62"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Disimpan"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/view3"
+            android:layout_width="370dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bghomemid"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:id="@+id/home1"
+            android:paddingRight="15dp"
+            tools:ignore="MissingConstraints">
+
+
+            <ImageView
+                android:id="@+id/imageViewlogopf"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/logo"/>
+
+            <TextView
+                android:id="@+id/pekerjaanpf"
+                android:textSize="14dp"
+                android:fontFamily="@font/inter_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/imageViewlogopf"
+                android:text="Web Development"/>
+            <TextView
+                android:id="@+id/ptperusahaanpf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pekerjaanpf"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/imageViewlogopf"
+                android:text="Pt.Royal Trust"/>
+            <TextView
+                android:id="@+id/tempatpekerjaanperusahaanf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ptperusahaanpf"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/imageViewlogopf"
+                android:text="Jakarta , Indonesia"/>
+            <TextView
+                android:id="@+id/deadlineperusahaanf"
+                android:textSize="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tempatpekerjaanperusahaanf"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/imageViewlogopf"
+                android:text="Deadline 20 Oktober 2023"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button12"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/buttonhome"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:textAllCaps="false"
+                android:text="Info"/>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/home1"
+            android:layout_width="370dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bghomemid"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:id="@+id/home2"
+            android:paddingRight="15dp"
+            tools:ignore="MissingConstraints">
+
+
+            <ImageView
+                android:id="@+id/imageViewlogops"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/logo"/>
+
+            <TextView
+                android:id="@+id/pekerjaanps"
+                android:textSize="14dp"
+                android:fontFamily="@font/inter_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/imageViewlogops"
+                android:text="Web Development"/>
+            <TextView
+                android:id="@+id/ptperusahaanps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pekerjaanps"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/imageViewlogops"
+                android:text="Pt.Royal Trust"/>
+            <TextView
+                android:id="@+id/tempatpekerjaanperusahaans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ptperusahaanps"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/imageViewlogops"
+                android:text="Jakarta , Indonesia"/>
+            <TextView
+                android:id="@+id/deadlineperusahaans"
+                android:textSize="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tempatpekerjaanperusahaans"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/imageViewlogops"
+                android:text="Deadline 20 Oktober 2023"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button13"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/buttonhome"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:textAllCaps="false"
+                android:text="Info"/>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/home2"
+            android:layout_width="370dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bghomemid"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:id="@+id/home3"
+            android:paddingRight="15dp"
+            tools:ignore="MissingConstraints">
+
+
+            <ImageView
+                android:id="@+id/imageViewlogopb"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/logo"/>
+
+            <TextView
+                android:id="@+id/pekerjaanpb"
+                android:textSize="14dp"
+                android:fontFamily="@font/inter_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/imageViewlogopb"
+                android:text="Web Development"/>
+            <TextView
+                android:id="@+id/ptperusahaanpb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pekerjaanpb"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/imageViewlogopb"
+                android:text="Pt.Royal Trust"/>
+            <TextView
+                android:id="@+id/tempatpekerjaanperusahaanb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ptperusahaanpb"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/imageViewlogopb"
+                android:text="Jakarta , Indonesia"/>
+            <TextView
+                android:id="@+id/deadlineperusahaanb"
+                android:textSize="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tempatpekerjaanperusahaanb"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/imageViewlogopb"
+                android:text="Deadline 20 Oktober 2023"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button14"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/buttonhome"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:textAllCaps="false"
+                android:text="Info"/>
+
+
+        </RelativeLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/buttonblue"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/button11"
+            android:textAllCaps="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Buat Lamaran Pekerjaan"/>
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>

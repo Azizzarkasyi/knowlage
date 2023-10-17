@@ -13,6 +13,24 @@
         android:theme="@style/Theme.Knowlage"
         tools:targetApi="31">
         <activity
+            android:name=".Detail_pelamar"
+            android:exported="false"/>
+        <activity
+            android:name=".buat_lamaran"
+            android:exported="false"/>
+        <activity
+            android:name=".Berhasil_diposting"
+            android:exported="false"/>
+        <activity
+            android:name=".Daftar_pelamar"
+            android:exported="false"/>
+        <activity
+            android:name=".Akun_saya_perusahaan"
+            android:exported="false"/>
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false"/>
+        <activity
             android:name=".succes"
             android:exported="false"/>
         <activity

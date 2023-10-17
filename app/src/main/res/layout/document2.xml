@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginHorizontal="20dp"
+    android:layout_marginTop="20dp"
+    android:layout_width="370dp"
+    android:layout_height="100dp">
+    <RelativeLayout
+        android:background="@drawable/bghomemid"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textSize="16dp"
+            android:fontFamily="@font/inter_medium"
+            android:id="@+id/textView68"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Surat lamaran"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button18"
+            android:background="@drawable/buttongreen"
+            android:textColor="@color/white"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Lihat file"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
