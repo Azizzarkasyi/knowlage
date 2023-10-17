@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<group android:checkableBehavior="single">
+
+    <item android:id="@+id/help"
+          android:icon="@drawable/tandatanya"
+          android:title="Help and Feedback"/>
+    <item android:id="@+id/skil"
+          android:icon="@drawable/skiltest"
+          android:title="Skil Test"/>
+    <item android:id="@+id/interview"
+          android:icon="@drawable/interviw"
+          android:title="Interview"/>
+    <item android:id="@+id/mentoring"
+          android:icon="@drawable/mentoring"
+          android:title="Mentoring"/>
+    <item android:id="@+id/setting"
+          android:icon="@drawable/setting"
+          android:title="Setting"/>
+
+</group>
+</menu>

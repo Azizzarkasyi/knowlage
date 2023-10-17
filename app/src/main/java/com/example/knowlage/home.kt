@@ -7,11 +7,16 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
+import androidx.appcompat.app.ActionBarDrawerToggle
+import androidx.drawerlayout.widget.DrawerLayout
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.android.material.navigation.NavigationView
 
 class home : Fragment() {
     private lateinit var pekerjaanList :ArrayList<pekerjaan>
     private lateinit var pekerjaanadapter: pekerjaanadapter
+    private lateinit var toggle: ActionBarDrawerToggle
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -20,7 +25,9 @@ class home : Fragment() {
         // Inflate the layout for this fragment
        val next =inflater.inflate(R.layout.fragment_home, container, false)
         val btn :ImageButton = next.findViewById(R.id.imageButtonsearch)
+        val btn2 :ImageButton = next.findViewById(R.id.imageButtonmenu)
         val recyclerView :RecyclerView = next.findViewById(R.id.recycleView_home)
+
         btn.setOnClickListener{
             val intent = Intent(activity,pencarian::class.java)
             startActivity(intent)
