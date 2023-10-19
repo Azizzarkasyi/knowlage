@@ -21,7 +21,6 @@ class undang_perusahaan : Fragment() {
         val new =inflater.inflate(R.layout.fragment_undang_perusahaan, container, false)
         val btn :Button = new.findViewById(R.id.button10)
         val btn2 :Button = new.findViewById(R.id.button10r)
-        val btn3 :Button = new.findViewById(R.id.button10v)
 
 
         btn.setOnClickListener {
@@ -30,11 +29,6 @@ class undang_perusahaan : Fragment() {
             transaction?.replace(R.id.frameLayout1,pesanfragment)?.commit()
         }
         btn2.setOnClickListener {
-            val pesanfragment = pesan_perusahaan()
-            val transaction=fragmentManager?.beginTransaction()
-            transaction?.replace(R.id.frameLayout1,pesanfragment)?.commit()
-        }
-        btn3.setOnClickListener {
             val pesanfragment = pesan_perusahaan()
             val transaction=fragmentManager?.beginTransaction()
             transaction?.replace(R.id.frameLayout1,pesanfragment)?.commit()

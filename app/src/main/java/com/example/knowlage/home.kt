@@ -27,6 +27,13 @@ class home : Fragment() {
         val btn :ImageButton = next.findViewById(R.id.imageButtonsearch)
         val btn2 :ImageButton = next.findViewById(R.id.imageButtonmenu)
         val recyclerView :RecyclerView = next.findViewById(R.id.recycleView_home)
+        val drawerLayout: DrawerLayout = next.findViewById(R.id.drawer_layout1)
+        val navigationView :NavigationView = next.findViewById(R.id.sidebar1)
+        btn2.setOnClickListener{
+            toggle = ActionBarDrawerToggle(activity, drawerLayout, R.string.open,R.string.clise)
+            drawerLayout.addDrawerListener(toggle)
+            toggle.syncState()
+        }
 
         btn.setOnClickListener{
             val intent = Intent(activity,pencarian::class.java)

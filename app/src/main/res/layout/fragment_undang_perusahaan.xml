@@ -319,16 +319,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Pengalaman Kerja : 7 Tahun"/>
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/button10v"
-                android:background="@drawable/buttonhome"
-                android:layout_width="wrap_content"
-                android:textAllCaps="false"
-                android:layout_marginBottom="10dp"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentEnd="true"
-                android:layout_height="20dp"
-                android:text="Chat Pelamar"/>
         </RelativeLayout>
         <RelativeLayout
             android:layout_below="@id/relativeLayout6"
